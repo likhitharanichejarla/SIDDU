@@ -4,7 +4,7 @@ const Stddata = require ('./model');
 const app = express();
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://likhitharanichejarla_db_user:SUlhlUfztaQxj1WL@cluster0.hzz7z7z.mongodb.net/').then(() => console.log('Connected to MongoDB')).catch(err => console.log(err));
+mongoose.connect('mongodb+srv://likhitharanichejarla_db_user:@cluster0.hzz7z7z.mongodb.net/').then(() => console.log('Connected to MongoDB')).catch(err => console.log(err));
 app.post('/add_stddata', async (req, res) => {
     const {username} = req.body;
     const {email} = req.body;
